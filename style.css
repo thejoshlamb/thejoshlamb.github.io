@@ -1,0 +1,420 @@
+/* CSS Reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strike, strong, sub, sup, tt, var,
+b, i,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	text-decoration:none;
+}
+
+ul {
+	list-style-type: none;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-start: 0;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color:inherit;
+}
+
+/* UNIVERSAL / HUGE MODE */
+
+body {
+	font-family: 'Exo 2',Arial,sans serif;
+	color:White;
+	background-attachment: fixed;
+	background-size:cover;
+	font-size:1.3em;
+}
+
+.row {
+	display:inline-block;
+}
+
+.bio, .showcase, .profile {
+	text-align: center;
+	min-height:100vh;
+}
+
+.scrollerbox {
+	height:560px;
+	position: relative;
+  overflow: hidden;
+  border-radius:2px;
+}
+
+.overlay {
+	position:absolute;
+	left:1em;
+	background-color: rgba(0,0,0,0.7);
+  z-index:2;
+  padding:0 1em;
+  margin:auto;
+  height:100%;
+}
+
+.scroller {
+	height: 100%;
+	width: 2526px;
+	background: url(http://imgur.com/9IJUFIi.png);
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	-moz-transition:  opacity 0.5s ease-out; 
+	-o-transition: opacity 0.5s ease-out; 
+	-webkit-transition: opacity 0.5s ease-out; 
+	-ms-transition: opacity 0.5s ease-out; 
+
+	-webkit-animation: moveSlideshow 240s linear infinite;
+	-moz-animation:    moveSlideshow 240s linear infinite;
+}
+
+.scroller {
+   /* Hey browser, use your GPU */
+   -webkit-transform: translate3d(0, 0, 0);
+}
+
+@-webkit-keyframes moveSlideshow {
+	0%   { 
+		-webkit-transform: translateX(0);  
+	}    
+	100% { 
+		-webkit-transform: translateX(-100%);  
+	}
+}
+
+@-webkit-keyframes blurSlideshow {
+	0% { -webkit-filter:blur(5px);
+		-webkit-transform: translateX(0); }
+		100% { -webkit-filter:blur(5px) ;
+			-webkit-transform: translateX(-100%) }
+		}
+.container{
+	margin:auto;
+	max-width:1000px;
+	height:100%;
+}
+
+.profile {
+	margin:auto;
+	color:White;
+	background-color:#d1f1fc;
+	overflow:hidden;
+}
+
+.showcase {
+
+	background-color:#007241;
+}
+
+.bio {
+	background-color: #313186;
+}
+
+
+.tile {
+	display:inline-block;
+	margin:0 1em;
+	text-align:center;
+	height:128px;
+	width:128px;
+	border-radius: 5px;
+}
+
+.tile img {
+	width:100%;
+}
+
+.back {
+	display:none;
+}
+
+.min {
+	display:none;
+}
+
+.buttonbox {
+	display:inline;
+	text-align:center;
+	margin:1em auto;
+	padding:1em 0;
+}
+
+.name {
+	font-size: 7em;
+	margin: 0 auto 50px auto;
+}
+
+.blurb {
+	margin-bottom:100px;
+}
+
+#mugshot {
+	width:250px;
+	margin: 15px auto;
+	border-radius: 50%;
+}
+
+.buttons {
+	text-align:center;
+}
+
+#github {
+	background-color:#FF9C00;
+}
+
+#linkedin {
+	background-color:#4875B4;
+}
+
+#facebook {
+	background-color: #3B5998;
+}
+
+#twitter {
+	background-color: #4099FF;
+}
+
+.tilecontent {
+	display:block;
+}
+
+
+.showcase img {
+	width:500px;
+	height:500px;
+	border-radius:5px;
+	margin-bottom:2em;
+}
+
+.showcase .projects {
+	margin:3em auto 0;
+}
+
+.showcase .projects li {
+	display:inline-block;
+	text-align:center;
+	padding:1em;
+}
+
+.projects p {
+	max-width:400px;
+	margin:auto;
+}
+
+.colorbar {
+	background-color: rgba(0,0,0,1);
+	padding:0.5em;
+}
+
+.banner {
+	font-size: 2em;
+	font-style: italic;
+}
+
+.borderbox {
+	display:inline-block;
+	text-align:center;
+}
+
+.placestable {
+	margin-top:2em;
+	font-size:2em;
+	border-collapse:collapse;
+}
+
+
+.placestable .left {
+	text-align:right;
+}
+
+.placestable .joshlamb {
+	text-align:center;
+	opacity:0.3;
+}
+
+.placestable .joshlamb:hover {
+	opacity:1;
+}
+
+.placestable .right {
+	text-align:left;
+}
+
+.left, .right, .joshlamb {
+	padding: 5px;
+}
+
+.placeslist ul {
+	margin:1em auto ;
+	font-size: 2em
+}
+
+.placeslist ul li {
+	margin:0.75em;
+}
+
+#footer {
+	z-index:9;
+	color: White;
+	position:fixed;
+	bottom:0;
+	height:2em;
+	width:100%;
+	background-color:Black;
+}
+
+#footer ul {
+	margin:0.3em 1em 0.3em 1em;
+}
+
+#footer .menubutton {
+	float:left;
+}
+
+#footer .social {
+	float:right;
+	margin-top:0;
+}
+
+#footer .social img {
+	height:100%;
+}
+
+#footer li {
+	display:inline-block;
+}
+
+#menu {
+	z-index:8;
+	display:none;
+	text-align:center;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: Black;
+	color:White;
+}
+
+#menu ul {
+	margin-top:3em;
+}
+
+#menu li {
+	font-size: 3em;
+	padding:50px;
+}
+
+#menu li:hover {
+	background-color:White;
+	color:Black;
+}
+
+/*NORMAL MODE*/
+
+@media screen and (max-width:1600px) {
+
+	.name {
+		font-size:4em;
+		margin-bottom:10px;
+	}
+
+	.blurb {
+		margin-bottom:50px;
+	}
+}
+
+/*MIN MODE*/
+
+@media screen and (max-width:900px) {
+	.max {
+		display:none;
+	}
+
+	.min {
+		display:block;
+	}	
+
+	.profile {
+		padding-top:0;
+	}
+
+	.overlay {
+		padding:0;
+	}
+
+	.tile {
+		height:96px;
+		width:96px;
+	}
+
+	#mugshot {
+		width:150px;
+		margin-bottom:0;
+	}
+
+	.buttonbox {
+		width:80%;
+		margin:auto;
+	}
+
+	.name {
+		font-size:2.5em;
+		margin-bottom:0.2em;
+	}
+
+	.blurb {
+		margin-bottom:0.2em;
+	}
+
+	.tile {
+		margin:0.5em 0.5em;
+	}
+
+	.placestable{
+		font-size:1em;
+	}
+
+	.placestable .joshlamb{
+		opacity:1;
+	}
+
+	.left, .right, .joshlamb{
+		padding:2px 2px 10px 2px
+	}
+
+	.showcase .projects img {
+		display:inline-block;
+		height:300px;
+		width:300px;
+	}
+
+	#menu ul {
+		margin-top:1em;
+	}
+
+	#menu li {
+		font-size: 2em;
+		padding:30px;
+	}
+	
+}
+
+
