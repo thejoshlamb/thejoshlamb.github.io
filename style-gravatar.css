@@ -36,8 +36,8 @@ a:link, a:visited, a:hover, a:active {
 body {
 	font-family: 'Exo 2',Arial,sans serif;
 	color:White;
-	background-color:Black;
-	background-image: url('./img/van.JPG');
+  background-color:Black;
+  background-image: url('./img/van.jpg');
 	background-attachment: fixed;
 	background-size:cover;
 	font-size:1.3em;
@@ -147,20 +147,11 @@ body {
 	margin-bottom:100px;
 }
 
-.logo {
-	margin:0 0 100px;
-	-moz-transition:all 100 ease;
-	-o-transition: all 100 ease;
-	-ms-transition: all 100 ease;
-	transition: all 100 ease;
-}
-
-.logo:hover {	
-	-webkit-transform:rotate(-180deg);
-	-moz-transform:rotate(-180deg); 
-	-o-transform:rotate(-180deg); 
-	transform:rotate(-180deg);
-
+#mugshot {
+	width:250px;
+	margin: 15px auto;
+	border: 5px solid White;
+	border-radius: 5px;
 }
 
 .buttons {
@@ -326,10 +317,6 @@ p.title {
 /*MIN MODE*/
 
 @media screen and (max-width:900px) {
-	body{
-		background: url(./img/vanmobile.jpg);
-	}
-	
 	.max {
 		display:none;
 	}
@@ -347,9 +334,9 @@ p.title {
 		width:96px;
 	}
 
-	.logo {
-		width:50%;
-		margin:20px 0 20px;
+	#mugshot {
+		width:150px;
+		margin-bottom:0;
 	}
 
 	.buttonbox {
@@ -382,8 +369,9 @@ p.title {
 	}
 
 	.showcase .projects img {
-		height:200px;
-		width:200px;
+		display:inline-block;
+		height:300px;
+		width:300px;
 	}
 
 	#menu ul {
