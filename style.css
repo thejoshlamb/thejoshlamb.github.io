@@ -93,7 +93,6 @@ body {
 
 .profile {
 	margin:auto;
-	padding-top:3em;
 }
 
 .showcase {
@@ -339,7 +338,7 @@ p.title {
 	}	
 
 	.profile {
-		padding-top:0;
+		padding-top:1em;
 	}
 
 	.tile {
