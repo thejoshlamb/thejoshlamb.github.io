@@ -1,0 +1,405 @@
+/* CSS Reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strike, strong, sub, sup, tt, var,
+b, i,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	text-decoration:none;
+}
+
+ul {
+	list-style-type: none;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-start: 0;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color:inherit;
+}
+
+/* UNIVERSAL / HUGE MODE */
+
+body {
+	font-family: 'Exo 2',Arial,sans serif;
+	color:White;
+	background-color:Black;
+	background-image: url('./img/van.JPG');
+	background-attachment: fixed;
+	background-size:cover;
+	font-size:1.3em;
+}
+
+.row {
+	clear: both;
+	padding: 0;
+	margin: 0;
+}
+
+/*  GROUPING  */
+.group:before, .group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { 
+	margin-left: 0; 
+}
+
+/*  Two Column  */
+
+.span_1of2 {
+	width: 48.5%;
+}
+
+
+
+#header {
+	position:fixed;
+	height:100px;
+}
+
+.profile, .bookend {
+	text-align: center;
+	min-height:100%;
+}
+
+.bio, .showcase {
+	text-align: center;
+	min-height:80%;
+}
+
+.profile {
+	margin:auto;
+}
+
+.showcase {
+	background-color:White;
+	color:Black;
+}
+
+.bio{
+	font-size: 4em;
+	line-height:80%;
+	background-color: LightBlue
+}
+
+.blurb {
+	margin-bottom:1em;
+}
+
+.tile {
+	display:inline-block;
+	margin:0 25px 50px 25px;
+	text-align:center;
+	height:128px;
+	width:128px;
+	border-radius: 5px;
+	border:1px solid white;
+}
+
+.tile img {
+	width:100%;
+}
+
+.back {
+	display:none;
+}
+
+.min {
+	display:none;
+}
+
+.buttonbox {
+	text-align:center;
+	margin:auto;
+}
+
+.name {
+	font-size: 4em;
+	margin: 0 auto 50px auto;
+}
+
+.blurb {
+	margin-bottom:100px;
+}
+
+.logo {
+	margin:0 0 100px;
+	-moz-transition:all 100 ease;
+	-o-transition: all 100 ease;
+	-ms-transition: all 100 ease;
+	transition: all 100 ease;
+}
+
+.logo:hover {	
+	-webkit-transform:rotate(-180deg);
+	-moz-transform:rotate(-180deg); 
+	-o-transform:rotate(-180deg); 
+	transform:rotate(-180deg);
+
+}
+
+.buttons {
+	text-align:center;
+}
+
+#github:hover {
+	background-color:#FF9C00;
+	border:1px solid #FF9C00;
+}
+
+#linkedin:hover {
+	background-color:#4875B4;
+	border:1px solid #4875B4;
+}
+
+#facebook:hover {
+	background-color: #3B5998;
+	border:1px solid #3B5998;
+}
+
+#twitter:hover {
+	background-color: #4099FF;
+	border:1px solid #4099FF;
+}
+
+.tilecontent {
+	display:block;
+}
+
+
+.showcase img {
+	width:350px;
+	height:350px;
+	margin:1em;
+}
+
+.caption {
+	width:90%;
+	margin:1em;
+}
+
+p.title {
+	font-size: 2em;
+}
+
+
+.banner {
+	font-size: 4em;
+	line-height:80%;
+}
+
+.banner-2 {
+	font-size: 4em;
+	line-height:80%;
+	color:LightBlue;
+	background-color: White;
+	padding-top:1em;
+}
+
+.bio {
+	text-align:center;
+	padding-top:50px;
+	font-size: 1em;
+}
+
+
+.placestable {
+	border-collapse:collapse;
+	font-size: 2em;
+	margin:auto;
+}
+
+
+.placestable .left {
+	text-align:right;
+}
+
+.placestable .joshlamb {
+	text-align:center;
+	opacity:0.3;
+}
+
+.placestable .joshlamb:hover {
+	opacity:1;
+}
+
+.placestable .right {
+	text-align:left;
+}
+
+.left, .right, .joshlamb {
+	padding: 5px;
+}
+
+.placeslist ul {
+	font-size: 2em;
+	margin:1em auto ;
+}
+
+.placeslist ul li {
+	margin:0.75em;
+}
+
+#footer {
+	z-index:9;
+	color: White;
+	position:fixed;
+	bottom:0;
+	height:2em;
+	width:100%;
+	background-color:Black;
+}
+
+#footer ul {
+	margin:0.3em 1em 0.3em 1em;
+}
+
+#footer .menubutton {
+	float:left;
+}
+
+#footer .social {
+	float:right;
+	margin-top:0;
+}
+
+#footer .social img {
+	height:100%;
+}
+
+#footer li {
+	display:inline-block;
+}
+
+#menu {
+	display:none;
+	text-align:center;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: Black;
+	color:White;
+}
+
+#menu ul {
+	margin-top:3em;
+}
+
+#menu li {
+	font-size: 3em;
+	padding:50px;
+}
+
+#menu li:hover {
+	background-color:White;
+	color:Black;
+}
+
+
+/*MIN MODE*/
+
+@media screen and (max-width:900px) {
+	body{
+		background: url(./img/vanmobile.jpg);
+	}
+	
+	.max {
+		display:none;
+	}
+
+	.min {
+		display:block;
+	}	
+
+	.profile {
+		padding-top:1em;
+	}
+
+	.tile {
+		height:96px;
+		width:96px;
+	}
+
+	.logo {
+		width:50%;
+		margin:20px 0 20px;
+	}
+
+	.buttonbox {
+		width:80%;
+	}
+
+	.name {
+		font-size:2.5em;
+		margin-bottom:0.2em;
+	}
+
+	.blurb {
+		margin-bottom:0.2em;
+	}
+
+	.tile {
+		margin:0.5em 0.5em;
+	}
+
+	.placestable{
+		font-size:1em;
+	}
+
+	.placestable .joshlamb{
+		opacity:1;
+	}
+
+	.left, .right, .joshlamb{
+		padding:2px 2px 10px 2px
+	}
+
+	.showcase .projects img {
+		height:200px;
+		width:200px;
+	}
+
+	#menu ul {
+		margin-top:1em;
+	}
+
+	#menu li {
+		font-size: 2em;
+		padding:30px;
+	}
+
+	.span_1of2 {
+		width: 100%;
+	}
+
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
