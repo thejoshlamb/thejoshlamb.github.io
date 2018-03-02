@@ -122,7 +122,22 @@ th, td {
 }
 
 @media screen and (max-width:900px) {
+    body {
+        font-size: small;
+    }
+
+    #hiScores {
+        font-size: large;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        margin: 20px;
+        max-width: 100px;
+    }
+
     th, td {
         padding: 15px 5px;
+        font-size: small;
     }
 }
