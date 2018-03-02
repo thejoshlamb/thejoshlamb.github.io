@@ -108,3 +108,45 @@ function Star(x, y, size, velocity) {
     this.size = size;
     this.velocity = velocity;
 }
+
+
+///////
+
+var table = document.getElementById('scoresTable');
+var hiscores = [];
+for (var item in burgers) {
+    hiscores.push([item, burgers[item]]);
+}
+hiscores.sort(function(a, b) {
+    return b[1] - a[1];
+});
+var count = 1;
+hiscores.forEach(function(burger) {
+    var row = table.insertRow();
+    var rank = row.insertCell(0);
+    var name = row.insertCell(1);
+    var score = row.insertCell(2);
+    rank.innerText = count;
+    name.innerText = burger[0];
+    score.innerText = burger[1];
+    count += 1;
+});
+
+
+document.getElementById('hiScores').onclick = function() {
+    document.getElementById('scoresTable').style.display = "table";
+    document.getElementById('aboutSection').style.display = "none";
+    document.getElementById('faqSection').style.display = "none";
+};
+
+document.getElementById('about').onclick = function() {
+    document.getElementById('scoresTable').style.display = "none";
+    document.getElementById('aboutSection').style.display = "block";
+    document.getElementById('faqSection').style.display = "none";
+};
+
+document.getElementById('faq').onclick = function() {
+    document.getElementById('scoresTable').style.display = "none";
+    document.getElementById('aboutSection').style.display = "none";
+    document.getElementById('faqSection').style.display = "block";
+};
