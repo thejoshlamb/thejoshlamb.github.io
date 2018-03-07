@@ -99,6 +99,10 @@ th, td {
     margin: 40px;
 }
 
+#faqList {
+    line-height: 140%;
+}
+
 .question {
     margin-bottom:100px;
 }
