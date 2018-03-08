@@ -88,6 +88,23 @@ th, td {
     padding: 20px;
 }
 
+.blink:hover {
+    -webkit-animation: pulsate 0.5s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
 #about {
     display: block;
     margin: 40px;
@@ -140,25 +157,4 @@ th, td {
         padding: 15px 5px;
         font-size: small;
     }
-}
-
-.scanLines {
-    /*** WEBKIT ***/
-    background: -webkit-repeating-linear-gradient(
-    top,
-    transparent 0px,
-    transparent 1px,
-    rgba(0,0,0,0.25) 1px,
-    rgba(0,0,0,0.25) 2px
-    );
-    -webkit-background-size: 100% 2px;
-    /** MOZILLA **/
-    background: -moz-repeating-linear-gradient(
-    top,
-    transparent 0px,
-    transparent 1px,
-    rgba(0,0,0,0.25) 1px,
-    rgba(0,0,0,0.25) 2px
-    );
-    -moz-background-size: 100% 2px;
 }
