@@ -128,14 +128,19 @@ th, td {
     margin-bottom:20px;
 }
 
-#copyright {
-    margin: 20px;
+#footer, #copyright {
+    margin: 40px;
 }
 
-#copyright-fixed {
+#footer-fixed {
     position: fixed;
     bottom:0;
     width:100%;
+}
+
+.socialIcon > img {
+    height:40px;
+    width:40px;
 }
 
 @media screen and (max-width:900px) {

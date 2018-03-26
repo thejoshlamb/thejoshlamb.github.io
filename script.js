@@ -33,7 +33,7 @@ const list = [
     },
     {
         name: 'Monarch Burger at The American',
-        score: 8.8,
+        score: 8.775,
         date: new Date('June 14 2017'),
         link: 'https://www.monarchburger.com/'
     },
