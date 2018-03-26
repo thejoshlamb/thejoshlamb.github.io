@@ -90,6 +90,7 @@ hiscores.forEach(function(burger) {
     rank.innerText = count;
     var link = document.createElement("a");
     link.setAttribute("href", burger.link);
+    link.setAttribute("target", "_blank");
     link.className = "blink";
     var linkText = document.createTextNode(burger.name);
     link.appendChild(linkText);
