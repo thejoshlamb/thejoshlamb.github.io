@@ -72,6 +72,10 @@ body {
     text-align:center;
 }
 
+#tableSection {
+    margin:30px;
+}
+
 table {
     border-spacing: 0;
     position: relative;
