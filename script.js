@@ -1,17 +1,5 @@
 const multiplier = 12345;
 
-const burgers = {
-    'Trans Am': 8.85,
-    'Moderne Burger': 6.675,
-    'Bistro Wagon rouge': 8.2333,
-    'Monarch Burger at The American': 8.8,
-    'Campagnolo Upstairs': 8.4,
-    'The Oakwood Burger 2.0': 8.1,
-    'Parallel 49 Street Kitchen': 6.85,
-    'Hawksworth': 8.25,
-    'Pourhouse': 6.45
-};
-
 const list = [
     {
         name: 'Trans Am',
@@ -51,7 +39,7 @@ const list = [
     },
     {
         name: 'Parallel 49 Street Kitchen',
-        score: 6.85,
+        score: 6.725,
         date: new Date('September 27 2017'),
         link: 'http://parallel49brewing.com/street_kitchen'
     },
@@ -63,10 +51,16 @@ const list = [
     },
     {
         name: 'Pourhouse',
-        score: 6.45,
-        date: new Date('October 27 2017'),
+        score: 6.9,
+        date: new Date('March 28 2018'),
         link: 'http://www.pourhousevancouver.com/'
     },
+    {
+        name: 'Romer\'s Burger Bar',
+        score: 6.6,
+        date: new Date('September 3 2017'),
+        link: 'http://http://romersburgerbar.com/'
+    }
 ];
 
 const numberWithCommas = function(x) {
