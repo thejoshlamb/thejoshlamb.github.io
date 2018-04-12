@@ -81,21 +81,44 @@ hiscores = list.map(function(item) {
 hiscores.sort(function(a, b) {
     return b.score - a.score;
 });
-var count = 1;
-hiscores.forEach(function(burger) {
-    if (count <= 10)
-    var row = table.insertRow();
-    var rank = row.insertCell(0);
-    var name = row.insertCell(1);
-    var score = row.insertCell(2);
-    rank.innerText = count;
-    var link = document.createElement("a");
-    link.setAttribute("href", burger.link);
-    link.setAttribute("target", "_blank");
-    link.className = "blink";
-    var linkText = document.createTextNode(burger.name);
-    link.appendChild(linkText);
-    name.appendChild(link);
-    score.innerText = numberWithCommas(burger.score);
-    count += 1;
-});
+var count = 0;
+function drawScores () {
+    setTimeout(function() {
+        var row = table.insertRow();
+        var rank = row.insertCell(0);
+        var name = row.insertCell(1);
+        var score = row.insertCell(2);
+        rank.innerText = count + 1;
+        var link = document.createElement("a");
+        link.setAttribute("href", hiscores[count].link);
+        link.setAttribute("target", "_blank");
+        link.className = "blink";
+        var linkText = document.createTextNode(hiscores[count].name);
+        link.appendChild(linkText);
+        name.appendChild(link);
+        score.innerText = numberWithCommas(hiscores[count].score);
+        count += 1;
+        if (count < 10) {
+            drawScores();
+        }
+    }, 100)
+};
+drawScores();
+// hiscores.forEach(function(burger) {
+//     if (count <= 10)
+//     var row = table.insertRow();
+//     var rank = row.insertCell(0);
+//     var name = row.insertCell(1);
+//     var score = row.insertCell(2);
+//     rank.innerText = count;
+//     var link = document.createElement("a");
+//     link.setAttribute("href", burger.link);
+//     link.setAttribute("target", "_blank");
+//     link.className = "blink";
+//     var linkText = document.createTextNode(burger.name);
+//     link.appendChild(linkText);
+//     name.appendChild(link);
+//     score.innerText = numberWithCommas(burger.score);
+//     count += 1;
+//
+// });

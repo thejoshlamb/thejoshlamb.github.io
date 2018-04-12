@@ -18,6 +18,17 @@ time, mark, audio, video {
     text-decoration:none;
 }
 
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(200%);
+        opacity:0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity:1;
+    }
+}
+
 ul {
     list-style-type: none;
     -webkit-margin-before: 0;
@@ -85,6 +96,7 @@ body {
 
 #tableSection {
     margin:30px;
+    min-height: 600px;
 }
 
 table {
@@ -101,6 +113,10 @@ th {
 
 th, td {
     padding: 20px;
+}
+
+tr {
+    animation: 500ms linear 0s 1 slideInFromRight;
 }
 
 .blink:hover {
