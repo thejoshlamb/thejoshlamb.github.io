@@ -60,6 +60,12 @@ const list = [
         score: 6.6,
         date: new Date('September 3 2017'),
         link: 'http://http://romersburgerbar.com/'
+    },
+    {
+        name: 'Bells & Whistles',
+        score: 6.9166,
+        date: new Date('April 11 2018'),
+        link: 'https://www.bellsandwhistlesyvr.ca/'
     }
 ];
 
@@ -77,6 +83,7 @@ hiscores.sort(function(a, b) {
 });
 var count = 1;
 hiscores.forEach(function(burger) {
+    if (count <= 10)
     var row = table.insertRow();
     var rank = row.insertCell(0);
     var name = row.insertCell(1);
