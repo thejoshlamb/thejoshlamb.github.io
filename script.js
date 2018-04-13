@@ -104,21 +104,3 @@ function drawScores () {
     }, 100)
 };
 drawScores();
-// hiscores.forEach(function(burger) {
-//     if (count <= 10)
-//     var row = table.insertRow();
-//     var rank = row.insertCell(0);
-//     var name = row.insertCell(1);
-//     var score = row.insertCell(2);
-//     rank.innerText = count;
-//     var link = document.createElement("a");
-//     link.setAttribute("href", burger.link);
-//     link.setAttribute("target", "_blank");
-//     link.className = "blink";
-//     var linkText = document.createTextNode(burger.name);
-//     link.appendChild(linkText);
-//     name.appendChild(link);
-//     score.innerText = numberWithCommas(burger.score);
-//     count += 1;
-//
-// });
