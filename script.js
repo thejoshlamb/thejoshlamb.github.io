@@ -3,25 +3,25 @@ const multiplier = 12345;
 const list = [
     {
         name: 'Trans Am',
-        score: 8.85,
+        score: 8.95,
         date: new Date('January 24 2018'),
         link: 'https://www.instagram.com/transamrestaurant/'
     },
     {
         name: 'Moderne Burger',
-        score: 6.675,
+        score: 6.625,
         date: new Date('January 20 2017'),
         link: 'https://www.moderneburger.com/'
     },
     {
         name: 'Bistro Wagon Rouge',
-        score: 8.2333,
+        score: 8.2,
         date: new Date('November 29 2017'),
         link: 'http://bistrowagonrouge.com/'
     },
     {
         name: 'Monarch Burger at The American',
-        score: 8.775,
+        score: 8.8,
         date: new Date('June 14 2017'),
         link: 'https://www.monarchburger.com/'
     },
@@ -66,6 +66,12 @@ const list = [
         score: 6.9166,
         date: new Date('April 11 2018'),
         link: 'https://www.bellsandwhistlesyvr.ca/'
+    },
+    {
+        name: 'Crowbar',
+        score: 8.5,
+        date: new Date('May 11 2018'),
+        link: 'https://crowbareastvan.com/'
     }
 ];
 
