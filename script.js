@@ -72,7 +72,13 @@ const list = [
         score: 8.5,
         date: new Date('May 11 2018'),
         link: 'https://crowbareastvan.com/'
-    }
+    },
+    {
+        name: 'The Bottleneck',
+        score: 7.4,
+        date: new Date('June 6 2018'),
+        link: 'http://www.thebottleneck.ca'
+    },
 ];
 
 const numberWithCommas = function(x) {
