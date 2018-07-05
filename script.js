@@ -1,5 +1,3 @@
-const multiplier = 12345;
-
 const list = [
     {
         name: 'Trans Am',
@@ -79,7 +77,15 @@ const list = [
         date: new Date('June 6 2018'),
         link: 'http://www.thebottleneck.ca'
     },
+    {
+        name: 'Mamie Taylor\'s',
+        score: 7.325,
+        date: new Date('July 4 2018'),
+        link: 'http://mamietaylors.ca/'
+    },
 ];
+
+const multiplier = 12345;
 
 const numberWithCommas = function(x) {
     return Math.round(x).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
