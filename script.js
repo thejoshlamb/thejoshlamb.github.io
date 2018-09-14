@@ -1,7 +1,7 @@
 const list = [
     {
         name: 'Trans Am',
-        score: 8.95,
+        score: 9.05,
         date: new Date('January 24 2018'),
         link: 'https://www.instagram.com/transamrestaurant/'
     },
@@ -43,7 +43,7 @@ const list = [
     },
     {
         name: 'Hawksworth',
-        score: 8.25,
+        score: 8.1,
         date: new Date('September 20 2016'),
         link: 'https://hawksworthrestaurant.com/'
     },
@@ -79,7 +79,7 @@ const list = [
     },
     {
         name: 'Mamie Taylor\'s',
-        score: 7.325,
+        score: 7.425,
         date: new Date('July 4 2018'),
         link: 'http://mamietaylors.ca/'
     },
