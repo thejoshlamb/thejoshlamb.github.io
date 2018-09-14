@@ -43,7 +43,7 @@ const list = [
     },
     {
         name: 'Hawksworth',
-        score: 8.1,
+        score: 8.100001,
         date: new Date('September 20 2016'),
         link: 'https://hawksworthrestaurant.com/'
     },
