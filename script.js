@@ -1,3 +1,5 @@
+// yes, i agree, this is lazily written
+
 const list = [
     {
         name: 'Trans Am',
@@ -7,61 +9,61 @@ const list = [
     },
     {
         name: 'Moderne Burger',
-        score: 6.625,
+        score: 6.425,
         date: new Date('January 20 2017'),
         link: 'https://www.moderneburger.com/'
     },
     {
         name: 'Bistro Wagon Rouge',
-        score: 8.2,
+        score: 8.1,
         date: new Date('November 29 2017'),
         link: 'http://bistrowagonrouge.com/'
     },
     {
-        name: 'Monarch Burger at The American',
-        score: 8.8,
+        name: 'Monarch Burger',
+        score: 8.6,
         date: new Date('June 14 2017'),
         link: 'https://www.monarchburger.com/'
     },
     {
         name: 'Campagnolo Upstairs',
-        score: 8.075,
+        score: 8.025,
         date: new Date('March 15 2017'),
         link: 'https://www.campagnolorestaurant.ca/upstairs-campagnolo/'
     },
     {
         name: 'The Oakwood Burger 2.0',
-        score: 8.1,
+        score: 8.03333333,
         date: new Date('July 26 2017'),
         link: 'http://www.theoakwood.ca/'
     },
     {
         name: 'Parallel 49 Street Kitchen',
-        score: 6.725,
+        score: 6.65,
         date: new Date('September 27 2017'),
         link: 'http://parallel49brewing.com/street_kitchen'
     },
     {
         name: 'Hawksworth',
-        score: 8.100001,
+        score: 8.101,
         date: new Date('September 20 2016'),
         link: 'https://hawksworthrestaurant.com/'
     },
     {
         name: 'Pourhouse',
-        score: 6.9,
+        score: 6.95,
         date: new Date('March 28 2018'),
         link: 'http://www.pourhousevancouver.com/'
     },
     {
         name: 'Romer\'s Burger Bar',
-        score: 6.6,
+        score: 6.425,
         date: new Date('September 3 2017'),
         link: 'http://http://romersburgerbar.com/'
     },
     {
         name: 'Bells & Whistles',
-        score: 6.9166,
+        score: 6.833333,
         date: new Date('April 11 2018'),
         link: 'https://www.bellsandwhistlesyvr.ca/'
     },
@@ -73,15 +75,21 @@ const list = [
     },
     {
         name: 'The Bottleneck',
-        score: 7.4,
+        score: 7.325,
         date: new Date('June 6 2018'),
         link: 'http://www.thebottleneck.ca'
     },
     {
         name: 'Mamie Taylor\'s',
-        score: 7.425,
+        score: 7.375,
         date: new Date('July 4 2018'),
         link: 'http://mamietaylors.ca/'
+    },
+    {
+        name: 'Golden Era',
+        score: 8.8625,
+        date: new Date('October 3 2018'),
+        link: 'https://www.instagram.com/goldeneraburger/'
     },
 ];
 
@@ -120,5 +128,6 @@ function drawScores () {
             drawScores();
         }
     }, 100)
-};
+}
+
 drawScores();
