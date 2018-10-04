@@ -182,6 +182,10 @@ tr {
     body {
         font-size: small;
     }
+    
+    #tableSection {
+        min-height: 500px;
+    }
 
     #topText {
         font-size: large;
