@@ -119,6 +119,10 @@ tr {
     animation: 500ms linear 0s 1 slideInFromRight;
 }
 
+#locationHeader {
+    min-width: 415px;
+}
+
 .blink:hover {
     -webkit-animation: pulsate 0.5s;
     -webkit-animation-iteration-count: infinite;

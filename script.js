@@ -9,7 +9,7 @@ const list = [
     },
     {
         name: 'Moderne Burger',
-        score: 6.425,
+        score: 6.425 + 0.001,
         date: new Date('January 20 2017'),
         link: 'https://www.moderneburger.com/'
     },
@@ -107,27 +107,39 @@ hiscores = list.map(function(item) {
 hiscores.sort(function(a, b) {
     return b.score - a.score;
 });
-var count = 0;
-function drawScores () {
+
+let count = 0;
+
+function drawScores (stop) {
     setTimeout(function() {
-        var row = table.insertRow();
-        var rank = row.insertCell(0);
-        var name = row.insertCell(1);
-        var score = row.insertCell(2);
+        const row = table.insertRow();
+        const rank = row.insertCell(0);
+        const name = row.insertCell(1);
+        const score = row.insertCell(2);
         rank.innerText = count + 1;
-        var link = document.createElement("a");
+        const link = document.createElement("a");
         link.setAttribute("href", hiscores[count].link);
         link.setAttribute("target", "_blank");
         link.className = "blink";
-        var linkText = document.createTextNode(hiscores[count].name);
+        const linkText = document.createTextNode(hiscores[count].name);
         link.appendChild(linkText);
         name.appendChild(link);
         score.innerText = numberWithCommas(hiscores[count].score);
         count += 1;
-        if (count < 10) {
-            drawScores();
+        if (count < stop) {
+            drawScores(stop);
         }
-    }, 100)
+    }, 150)
 }
 
-drawScores();
+drawScores(10);
+
+if (hiscores.length > 10) {
+    const showAll = document.getElementById('showAll');
+    showAll.setAttribute("style", "display: block")
+    showAll.onclick = () => {
+        showAll.setAttribute("style", "display: none")
+        drawScores(hiscores.length);
+
+    }
+}
