@@ -59,7 +59,7 @@ const list = [
         name: 'Romer\'s Burger Bar',
         score: 6.425,
         date: new Date('September 3 2017'),
-        link: 'http://http://romersburgerbar.com/'
+        link: 'http://romersburgerbar.com/'
     },
     {
         name: 'Bells & Whistles',
