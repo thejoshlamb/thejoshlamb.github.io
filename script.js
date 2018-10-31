@@ -93,13 +93,13 @@ const list = [
     },
     {
         name: 'Downlow Burger Shack',
-        score: 7.975,
+        score: 7.975 + 0.26,
         date: new Date('October 30 2018'),
         link: 'https://www.instagram.com/downlowburgers/'
     },
 ];
 
-const multiplier = 12345;
+const multiplier = 12345; // shh, don't tell anyone
 
 const numberWithCommas = function(x) {
     return Math.round(x).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
