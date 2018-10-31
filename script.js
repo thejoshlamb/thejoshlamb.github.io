@@ -32,7 +32,7 @@ const list = [
         link: 'https://www.campagnolorestaurant.ca/upstairs-campagnolo/'
     },
     {
-        name: 'The Oakwood Burger 2.0',
+        name: 'The Oakwood',
         score: 8.03333333,
         date: new Date('July 26 2017'),
         link: 'http://www.theoakwood.ca/'
@@ -90,6 +90,12 @@ const list = [
         score: 8.8625,
         date: new Date('October 3 2018'),
         link: 'https://www.instagram.com/goldeneraburger/'
+    },
+    {
+        name: 'Downlow Burger Shack',
+        score: 7.975,
+        date: new Date('October 30 2018'),
+        link: 'https://www.instagram.com/downlowburgers/'
     },
 ];
 
