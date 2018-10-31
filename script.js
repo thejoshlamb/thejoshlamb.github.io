@@ -9,7 +9,7 @@ const list = [
     },
     {
         name: 'Moderne Burger',
-        score: 6.425 + 0.001,
+        score: 6.425 + 0.01,
         date: new Date('January 20 2017'),
         link: 'https://www.moderneburger.com/'
     },
@@ -21,31 +21,31 @@ const list = [
     },
     {
         name: 'Monarch Burger',
-        score: 8.6,
+        score: 8.575,
         date: new Date('June 14 2017'),
         link: 'https://www.monarchburger.com/'
     },
     {
         name: 'Campagnolo Upstairs',
-        score: 8.025,
+        score: 7.925,
         date: new Date('March 15 2017'),
         link: 'https://www.campagnolorestaurant.ca/upstairs-campagnolo/'
     },
     {
         name: 'The Oakwood',
-        score: 8.03333333,
+        score: 8,
         date: new Date('July 26 2017'),
         link: 'http://www.theoakwood.ca/'
     },
     {
         name: 'Parallel 49 Street Kitchen',
-        score: 6.65,
+        score: 6.425,
         date: new Date('September 27 2017'),
         link: 'http://parallel49brewing.com/street_kitchen'
     },
     {
         name: 'Hawksworth',
-        score: 8.101,
+        score: 8.0875,
         date: new Date('September 20 2016'),
         link: 'https://hawksworthrestaurant.com/'
     },
