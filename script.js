@@ -93,7 +93,7 @@ const list = [
     },
     {
         name: 'Downlow Burger Shack',
-        score: 7.975 + 0.26,
+        score: 7.975 + 0.026,
         date: new Date('October 30 2018'),
         link: 'https://www.instagram.com/downlowburgers/'
     },
