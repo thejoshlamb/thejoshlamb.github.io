@@ -97,6 +97,12 @@ const list = [
         date: new Date('October 30 2018'),
         link: 'https://www.instagram.com/downlowburgers/'
     },
+    {
+        name: 'Fable Diner',
+        score: 7.82,
+        date: new Date('November 23 2018'),
+        link: 'http://fablediner.com/'
+    },
 ];
 
 const multiplier = 12345; // shh, don't tell anyone
