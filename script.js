@@ -103,6 +103,12 @@ const list = [
         date: new Date('November 23 2018'),
         link: 'http://fablediner.com/'
     },
+    {
+        name: 'Popina',
+        score: 6.7,
+        date: new Date('September 18 2018'),
+        link: 'http://www.popinacanteen.com/'
+    },
 ];
 
 const multiplier = 12345; // shh, don't tell anyone
