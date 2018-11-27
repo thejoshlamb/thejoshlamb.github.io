@@ -109,6 +109,12 @@ const list = [
         date: new Date('September 18 2018'),
         link: 'http://www.popinacanteen.com/'
     },
+    {
+        name: 'Vera\'s Burger Shack',
+        score: 4.7,
+        date: new Date('November 25 2018'),
+        link: 'http://www.verasburgershack.com/'
+    },
 ];
 
 const multiplier = 12345; // shh, don't tell anyone
