@@ -67,12 +67,13 @@ const list = [
         date: new Date('April 11 2018'),
         link: 'https://www.bellsandwhistlesyvr.ca/'
     },
-    {
-        name: 'Crowbar',
-        score: 8.5,
-        date: new Date('May 11 2018'),
-        link: 'https://crowbareastvan.com/'
-    },
+//     RIP    
+//     {
+//         name: 'Crowbar',
+//         score: 8.5,
+//         date: new Date('May 11 2018'),
+//         link: 'https://crowbareastvan.com/'
+//     },
     {
         name: 'The Bottleneck',
         score: 7.325,
