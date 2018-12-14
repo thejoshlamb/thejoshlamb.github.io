@@ -117,7 +117,7 @@ const list = [
         link: 'http://www.verasburgershack.com/'
     },
     {
-        name: 'Victor',
+        name: 'The Victor',
         score: 8.3875,
         date: new Date('December 13 2018'),
         link: 'https://www.parqvancouver.com/restaurants/the-victor/'
