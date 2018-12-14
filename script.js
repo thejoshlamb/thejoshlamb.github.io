@@ -116,6 +116,12 @@ const list = [
         date: new Date('November 25 2018'),
         link: 'http://www.verasburgershack.com/'
     },
+    {
+        name: 'Victor',
+        score: 8.3875,
+        date: new Date('December 13 2018'),
+        link: 'https://www.parqvancouver.com/restaurants/the-victor/'
+    },
 ];
 
 const multiplier = 12345; // shh, don't tell anyone
