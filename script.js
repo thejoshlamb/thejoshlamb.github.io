@@ -9,7 +9,7 @@ const list = [
     },
     {
         name: 'Moderne Burger',
-        score: 6.425 + 0.01,
+        score: 6.425 + 0.9, // even with romer's
         date: new Date('January 20 2017'),
         link: 'https://www.moderneburger.com/'
     },
@@ -39,7 +39,7 @@ const list = [
     },
     {
         name: 'Parallel 49 Street Kitchen',
-        score: 6.425,
+        score: 6.425 + 0.04,  // even with romer's
         date: new Date('September 27 2017'),
         link: 'http://parallel49brewing.com/street_kitchen'
     },
@@ -94,7 +94,7 @@ const list = [
     },
     {
         name: 'Downlow Burger Shack',
-        score: 7.975 + 0.026,
+        score: 7.975 + 0.026,  // he was a pal
         date: new Date('October 30 2018'),
         link: 'https://www.instagram.com/downlowburgers/'
     },
