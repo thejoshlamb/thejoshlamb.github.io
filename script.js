@@ -9,19 +9,19 @@ const list = [
     },
     {
         name: 'Moderne Burger',
-        score: 6.425 + 0.9, // even with romer's
+        score: 6.425,
         date: new Date('January 20 2017'),
         link: 'https://www.moderneburger.com/'
     },
     {
         name: 'Bistro Wagon Rouge',
-        score: 8.1,
+        score: 8.075,
         date: new Date('November 29 2017'),
         link: 'http://bistrowagonrouge.com/'
     },
     {
         name: 'Monarch Burger',
-        score: 8.575,
+        score: 8.45,
         date: new Date('June 14 2017'),
         link: 'https://www.monarchburger.com/'
     },
@@ -39,7 +39,7 @@ const list = [
     },
     {
         name: 'Parallel 49 Street Kitchen',
-        score: 6.425 + 0.04,  // even with romer's
+        score: 6.65,
         date: new Date('September 27 2017'),
         link: 'http://parallel49brewing.com/street_kitchen'
     },
@@ -57,7 +57,7 @@ const list = [
     },
     {
         name: 'Romer\'s Burger Bar',
-        score: 6.425,
+        score: 6.375,
         date: new Date('September 3 2017'),
         link: 'http://romersburgerbar.com/'
     },
@@ -94,7 +94,7 @@ const list = [
     },
     {
         name: 'Downlow Burger Shack',
-        score: 7.975 + 0.026,  // he was a pal
+        score: 7.85,
         date: new Date('October 30 2018'),
         link: 'https://www.instagram.com/downlowburgers/'
     },
@@ -121,6 +121,12 @@ const list = [
         score: 8.3875,
         date: new Date('December 13 2018'),
         link: 'https://www.parqvancouver.com/restaurants/the-victor/'
+    },
+    {
+        name: 'Hundy',
+        score: 7.7625,
+        date: new Date('January 25 2019'),
+        link: 'https://www.hundy.ca/'
     },
 ];
 
