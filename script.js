@@ -15,7 +15,7 @@ const list = [
     },
     {
         name: 'Bistro Wagon Rouge',
-        score: 8.075,
+        score: 8.1,
         date: new Date('November 29 2017'),
         link: 'http://bistrowagonrouge.com/'
     },
@@ -27,7 +27,7 @@ const list = [
     },
     {
         name: 'Campagnolo Upstairs',
-        score: 7.925,
+        score: 8.09375,
         date: new Date('March 15 2017'),
         link: 'https://www.campagnolorestaurant.ca/upstairs-campagnolo/'
     },
@@ -94,7 +94,7 @@ const list = [
     },
     {
         name: 'Downlow Burger Shack',
-        score: 7.85,
+        score: 7.725,
         date: new Date('October 30 2018'),
         link: 'https://www.instagram.com/downlowburgers/'
     },
