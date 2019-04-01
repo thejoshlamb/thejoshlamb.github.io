@@ -128,6 +128,12 @@ const list = [
         date: new Date('January 25 2019'),
         link: 'https://www.hundy.ca/'
     },
+    {
+        name: 'L\'Abbatoir',
+        score: 7.458333333,
+        date: new Date('March 31 2019'),
+        link: 'https://www.labattoir.ca/'
+    },
 ];
 
 const multiplier = 12345; // shh, don't tell anyone
