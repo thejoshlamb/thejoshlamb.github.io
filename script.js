@@ -31,12 +31,13 @@ const list = [
         date: new Date('March 15 2017'),
         link: 'https://www.campagnolorestaurant.ca/upstairs-campagnolo/'
     },
-    {
-        name: 'The Oakwood',
-        score: 8,
-        date: new Date('July 26 2017'),
-        link: 'http://www.theoakwood.ca/'
-    },
+//     RIP
+//     {
+//         name: 'The Oakwood',
+//         score: 8,
+//         date: new Date('July 26 2017'),
+//         link: 'http://www.theoakwood.ca/'
+//     },
     {
         name: 'Parallel 49 Street Kitchen',
         score: 6.65,
