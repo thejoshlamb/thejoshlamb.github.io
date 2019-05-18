@@ -3,14 +3,14 @@
 const list = [
     {
         name: 'Trans Am',
-        score: 9.05,
+        score: 9.125,
         date: new Date('January 24 2018'),
         link: 'https://www.instagram.com/transamrestaurant/'
     },
     {
-        name: 'Moderne Burger',
-        score: 6.425,
-        date: new Date('January 20 2017'),
+        name: 'Moderne Burgerette',
+        score: 7.2375,
+        date: new Date('May 17 2019'),
         link: 'https://www.moderneburger.com/'
     },
     {
@@ -21,7 +21,7 @@ const list = [
     },
     {
         name: 'Monarch Burger',
-        score: 8.45,
+        score: 8.4,
         date: new Date('June 14 2017'),
         link: 'https://www.monarchburger.com/'
     },
@@ -64,7 +64,7 @@ const list = [
     },
     {
         name: 'Bells & Whistles',
-        score: 6.833333,
+        score: 6.6833333,
         date: new Date('April 11 2018'),
         link: 'https://www.bellsandwhistlesyvr.ca/'
     },
@@ -95,7 +95,7 @@ const list = [
     },
     {
         name: 'Downlow Burger Shack',
-        score: 7.725,
+        score: 7.71875,
         date: new Date('October 30 2018'),
         link: 'https://www.instagram.com/downlowburgers/'
     },
