@@ -3,7 +3,7 @@
 const list = [
     {
         name: 'Trans Am',
-        score: 9.125,
+        score: 9.2,
         date: new Date('January 24 2018'),
         link: 'https://www.instagram.com/transamrestaurant/'
     },
@@ -134,6 +134,12 @@ const list = [
         score: 7.458333333,
         date: new Date('March 31 2019'),
         link: 'https://www.labattoir.ca/'
+    },
+    {
+        name: 'The Magnet',
+        score: 8.1083,
+        date: new Date('June 14 2019'),
+        link: 'https://instagram.com/themagnetvan'
     },
 ];
 
