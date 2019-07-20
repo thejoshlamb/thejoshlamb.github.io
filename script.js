@@ -139,7 +139,7 @@ const list = [
         name: 'The Magnet',
         score: 8.1083,
         date: new Date('June 14 2019'),
-        link: 'https://instagram.com/’
+        link: 'https://instagram.com/'
     },
     {
         name: 'Linh Cafe',
