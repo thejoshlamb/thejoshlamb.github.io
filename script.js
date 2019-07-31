@@ -87,12 +87,13 @@ const list = [
         date: new Date('July 4 2018'),
         link: 'http://mamietaylors.ca/'
     },
-    {
-        name: 'Golden Era',
-        score: 8.8625,
-        date: new Date('October 3 2018'),
-        link: 'https://www.instagram.com/goldeneraburger/'
-    },
+//     Asked to be removed
+//     {
+//         name: 'Golden Era',
+//         score: 8.8625,
+//         date: new Date('October 3 2018'),
+//         link: 'https://www.instagram.com/goldeneraburger/'
+//     },
     {
         name: 'Downlow Burger Shack',
         score: 7.71875,
