@@ -88,12 +88,12 @@ const list = [
         link: 'http://mamietaylors.ca/'
     },
 //     Asked to be removed
-    {
-        name: '[redacted]',
-        score: 8.8625,
-        date: new Date('October 3 2018'),
-        link: 'https://www.rivalburger.club'
-    },
+//     {
+//         name: 'Golden Era',
+//         score: 8.8625,
+//         date: new Date('October 3 2018'),
+//         link: 'https://www.rivalburger.club'
+//     },
     {
         name: 'Downlow Burger Shack',
         score: 7.71875,
