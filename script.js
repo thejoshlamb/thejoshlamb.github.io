@@ -146,7 +146,7 @@ const list = [
         name: 'Linh Cafe',
         score: 8.216666,
         date: new Date('July 19 2019'),
-        link: 'https://linhcafe.com'
+        link: 'http://linhcafe.com'
     },
 ];
 
