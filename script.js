@@ -19,12 +19,13 @@ const list = [
         date: new Date('November 29 2017'),
         link: 'http://bistrowagonrouge.com/'
     },
-    {
-        name: 'Monarch Burger',
-        score: 8.4,
-        date: new Date('June 14 2017'),
-        link: 'https://www.monarchburger.com/'
-    },
+//    Hibernating   
+//     {
+//         name: 'Monarch Burger',
+//         score: 8.4,
+//         date: new Date('June 14 2017'),
+//         link: 'https://www.monarchburger.com/'
+//     },
     {
         name: 'Campagnolo Upstairs',
         score: 8.09375,
