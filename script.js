@@ -149,6 +149,12 @@ const list = [
         date: new Date('July 19 2019'),
         link: 'http://linhcafe.com'
     },
+    {
+        name: 'The Ellis',
+        score: 7.80875,
+        date: new Date('September 13 2019'),
+        link: 'https://www.theellis.ca/'
+    },
 ];
 
 const multiplier = 12345; // shh, don't tell anyone
