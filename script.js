@@ -103,7 +103,7 @@ const list = [
     },
     {
         name: 'Fable Diner',
-        score: 7.82,
+        score: 7.5,
         date: new Date('November 23 2018'),
         link: 'http://fablediner.com/'
     },
