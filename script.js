@@ -155,6 +155,12 @@ const list = [
         date: new Date('September 13 2019'),
         link: 'https://www.theellis.ca/'
     },
+    {
+        name: 'Gotham Steakhouse',
+        score: 7,
+        date: new Date('October 10 2019'),
+        link: 'https://gothamsteakhouse.com'
+    },
 ];
 
 const multiplier = 12345; // shh, don't tell anyone
