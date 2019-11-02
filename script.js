@@ -161,6 +161,12 @@ const list = [
         date: new Date('October 10 2019'),
         link: 'https://gothamsteakhouse.com'
     },
+    {
+        name: 'Per Se Social Corner',
+        score: 8.2375,
+        date: new Date('November 1 2019'),
+        link: 'https://persesocialcorner.com'
+    },
 ];
 
 const multiplier = 12345; // shh, don't tell anyone
