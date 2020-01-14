@@ -28,7 +28,7 @@ const list = [
 //     },
     {
         name: 'Campagnolo Upstairs',
-        score: 8.09375,
+        score: 8.156,
         date: new Date('March 15 2017'),
         link: 'https://www.campagnolorestaurant.ca/upstairs-campagnolo/'
     },
@@ -127,7 +127,7 @@ const list = [
     },
     {
         name: 'Hundy',
-        score: 7.7625,
+        score: 8.0375,
         date: new Date('January 25 2019'),
         link: 'https://www.hundy.ca/'
     },
