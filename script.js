@@ -167,6 +167,12 @@ const list = [
         date: new Date('November 1 2019'),
         link: 'https://persesocialcorner.com'
     },
+    {
+        name: 'To Dine For',
+        score: 7.825,
+        date: new Date('February 7 2020'),
+        link: 'https://www.facebook.com/To-Dine-For-Eatery-401278653258975/'
+    },
 ];
 
 const multiplier = 12345; // shh, don't tell anyone
