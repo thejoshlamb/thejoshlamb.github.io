@@ -55,12 +55,8 @@ function drawScores (stop) {
         const name = row.insertCell(1);
         const score = row.insertCell(2);
         rank.innerText = count + 1;
-        const link = document.createElement("a");
-        link.setAttribute("target", "_blank");
-        link.className = "blink";
         const linkText = document.createTextNode(hiscores[count].name);
-        link.appendChild(linkText);
-        name.appendChild(link);
+        name.appendChild(linkText);
         score.innerText = numberWithCommas(hiscores[count].score);
         count += 1;
         if (count < stop) {
