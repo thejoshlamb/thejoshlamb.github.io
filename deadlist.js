@@ -9,16 +9,6 @@ const deadlist = [
         score: 9.2,
         date: new Date('January 24 2018'),
     },
-    {
-        name: 'Moderne Burgerette',
-        score: 7.2375,
-       date: new Date('May 17 2019'),
-    },
-    {
-        name: 'Bistro Wagon Rouge',
-        score: 8.1,
-        date: new Date('November 29 2017'),
-    },
      {
          name: 'Monarch Burger',
          score: 8.4,
@@ -72,7 +62,7 @@ if (hiscores.length > 10) {
     showAll.setAttribute("style", "display: block")
     showAll.onclick = () => {
         showAll.setAttribute("style", "display: none")
-        drawScores(hiscores.length);
+        drawScores(hiscores.length - 1);
 
     }
 }
