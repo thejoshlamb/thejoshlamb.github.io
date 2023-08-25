@@ -55,14 +55,4 @@ function drawScores (stop) {
     }, 150)
 }
 
-drawScores(10);
-
-if (hiscores.length > 10) {
-    const showAll = document.getElementById('showAll');
-    showAll.setAttribute("style", "display: block")
-    showAll.onclick = () => {
-        showAll.setAttribute("style", "display: none")
-        drawScores(hiscores.length - 1);
-
-    }
-}
+drawScores(hiscores.length - 1);
