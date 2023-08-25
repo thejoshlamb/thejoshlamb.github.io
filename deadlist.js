@@ -55,4 +55,4 @@ function drawScores (stop) {
     }, 150)
 }
 
-drawScores(hiscores.length - 1);
+drawScores(hiscores.length);
