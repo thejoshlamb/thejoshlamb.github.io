@@ -56,7 +56,6 @@ function drawScores (stop) {
         const score = row.insertCell(2);
         rank.innerText = count + 1;
         const link = document.createElement("a");
-        link.setAttribute("href", hiscores[count].link);
         link.setAttribute("target", "_blank");
         link.className = "blink";
         const linkText = document.createTextNode(hiscores[count].name);
