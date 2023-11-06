@@ -127,7 +127,13 @@ const list = [
         score: 8.516,
         date: new Date('August 18 2023'),
         link: 'https://www.streethawker.ca/'
-    },    
+    },
+    {
+        name: 'Monzo',
+        score: 8.925,
+        date: new Date('November 4 2023'),
+        link: 'https://www.monzoburger.com/'
+    },
 ];
 
 const deadlist = [    
