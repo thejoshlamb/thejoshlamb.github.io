@@ -134,6 +134,12 @@ const list = [
         date: new Date('November 4 2023'),
         link: 'https://www.monzoburger.com/'
     },
+    {
+        name: 'Between 2 Buns',
+        score: 9.05,
+        date: new Date('February 17 2024'),
+        link: 'https://www.between2bunsburgers.ca/'
+    },
 ];
 
 const deadlist = [    
