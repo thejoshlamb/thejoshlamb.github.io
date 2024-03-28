@@ -140,6 +140,12 @@ const list = [
         date: new Date('February 17 2024'),
         link: 'https://www.between2bunsburgers.ca/'
     },
+    {
+        name: 'Burger Crush',
+        score: 8.14,
+        date: new Date('March 28 2024'),
+        link: 'https://burgercrush.ca/'
+    },
 ];
 
 const deadlist = [    
