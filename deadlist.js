@@ -10,7 +10,7 @@ const deadlist = [
         date: new Date('January 24 2018'),
     },
      {
-         name: 'Monarch Burger',
+         name: 'Monarch Burger 1.0',
          score: 8.4,
          date: new Date('June 14 2017'),
      },

@@ -146,40 +146,13 @@ const list = [
         date: new Date('March 28 2024'),
         link: 'https://burgercrush.ca/'
     },
+    {
+        name: 'Monarch Burger 2.0',
+        score: 8.85,
+        date: new Date('May 31 2024'),
+        link: 'https://www.monarchburger.ca/'
+    },
 ];
-
-const deadlist = [    
-     {
-         name: 'Crowbar',
-         score: 8.5,
-         date: new Date('May 11 2018'),
-     },
-    {
-        name: 'Trans Am',
-        score: 9.2,
-        date: new Date('January 24 2018'),
-    },
-    {
-        name: 'Moderne Burgerette',
-        score: 7.2375,
-       date: new Date('May 17 2019'),
-    },
-    {
-        name: 'Bistro Wagon Rouge',
-        score: 8.1,
-        date: new Date('November 29 2017'),
-    },
-     {
-         name: 'Monarch Burger',
-         score: 8.4,
-         date: new Date('June 14 2017'),
-     },
-    {
-        name: 'Campagnolo Upstairs',
-        score: 8.156,
-        date: new Date('March 15 2017'),
-    }
-]
 
 const multiplier = 12345; // shh, don't tell anyone
 
