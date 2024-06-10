@@ -153,7 +153,7 @@ const list = [
         link: 'https://www.monarchburger.ca/'
     },
     {
-        name: 'Juicy Joe's',
+        name: 'Juicy Joe\'s',
         score: 7.775,
         date: new Date('June 10 2024'),
         link: 'https://www.juicyjoes.ca'
