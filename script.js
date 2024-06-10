@@ -152,6 +152,12 @@ const list = [
         date: new Date('May 31 2024'),
         link: 'https://www.monarchburger.ca/'
     },
+    {
+        name: 'Juicy Joe's',
+        score: 7.775,
+        date: new Date('June 10 2024'),
+        link: 'https://www.juicyjoes.ca'
+    },
 ];
 
 const multiplier = 12345; // shh, don't tell anyone
