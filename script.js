@@ -93,12 +93,6 @@ const list = [
         link: 'https://themagnet.ca/'
     },
     {
-        name: 'Linh Cafe',
-        score: 8.216666,
-        date: new Date('July 19 2019'),
-        link: 'http://linhcafe.com'
-    },
-    {
         name: 'The Ellis',
         score: 7.80875,
         date: new Date('September 13 2019'),
@@ -148,7 +142,7 @@ const list = [
     },
     {
         name: 'Monarch Burger 2.0',
-        score: 8.85,
+        score: 8.6,
         date: new Date('May 31 2024'),
         link: 'https://www.monarchburger.ca/'
     },
@@ -157,6 +151,12 @@ const list = [
         score: 7.775,
         date: new Date('June 10 2024'),
         link: 'https://www.juicyjoes.ca'
+    },
+    {
+        name: 'KAPOW! Burger',
+        score: 7.85,
+        date: new Date('June 10 2024'),
+        link: 'https://www.instagram.com/kapow_burger'
     },
 ];
 
