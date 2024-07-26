@@ -18,7 +18,12 @@ const deadlist = [
         name: 'Campagnolo Upstairs',
         score: 8.156,
         date: new Date('March 15 2017'),
-    }
+    },
+    {
+        name: 'Linh Cafe',
+        score: 8.216666,
+        date: new Date('July 19 2019'),
+    },
 ]
 
 const multiplier = 12345;
