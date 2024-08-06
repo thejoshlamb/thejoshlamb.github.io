@@ -118,8 +118,8 @@ const list = [
     },
     {
         name: 'Street Hawker',
-        score: 8.516,
-        date: new Date('August 18 2023'),
+        score: 8.58,
+        date: new Date('August 6 2024'),
         link: 'https://www.streethawker.ca/'
     },
     {
@@ -157,6 +157,12 @@ const list = [
         score: 7.85,
         date: new Date('June 10 2024'),
         link: 'https://www.instagram.com/kapow_burger'
+    },
+    {
+        name: 'Red Wagon',
+        score: 8.2,
+        date: new Date('August 6 2024'),
+        link: 'https://redwagoncafe.ca/'
     },
 ];
 
