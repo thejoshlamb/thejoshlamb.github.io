@@ -15,7 +15,7 @@ const list = [
     },
     {
         name: 'Pourhouse',
-        score: 6.95,
+        score: 7.225,
         date: new Date('March 28 2018'),
         link: 'http://www.pourhousevancouver.com/'
     },
@@ -163,6 +163,12 @@ const list = [
         score: 8.2,
         date: new Date('August 6 2024'),
         link: 'https://redwagoncafe.ca/'
+    },
+    {
+        name: 'Tableau',
+        score: 7,
+        date: new Date('November 1 2024'),
+        link: 'https://www.tableaubarbistro.com/'
     },
 ];
 
