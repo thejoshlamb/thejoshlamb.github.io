@@ -170,6 +170,12 @@ const list = [
         date: new Date('November 1 2024'),
         link: 'https://www.tableaubarbistro.com/'
     },
+    {
+        name: 'Take Out Shack',
+        score: 8.95,
+        date: new Date('May 1 2025'),
+        link: 'https://www.takeoutshack.ca/'
+    },
 ];
 
 const multiplier = 12345; // shh, don't tell anyone
