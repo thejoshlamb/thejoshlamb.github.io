@@ -1,3 +1,33 @@
+:root {
+    --primary-text-color: White;
+    --primary-bg-color: Black;
+    --font-family-main: 'Press Start 2P', Arial, sans-serif;
+    --default-margin: 40px;
+    --default-padding: 20px;
+    --logo-max-width: 250px;
+    --logo-max-width-small: 100px;
+    --transition-duration-logo: 30s;
+    --top-text-font-size: 36px;
+    --top-text-font-size-small: large;
+    --th-font-size: 22px;
+    --th-td-padding: 20px;
+    --th-td-padding-small-vertical: 15px;
+    --th-td-padding-small-horizontal: 5px;
+    --font-size-small-media: small;
+    --pulsate-duration: 0.5s;
+    --slide-in-duration: 500ms;
+
+    /* New variables for remaining pixel values */
+    --table-section-margin: 30px;
+    --table-section-min-height: 600px;
+    --table-section-min-height-small: 500px;
+    --table-max-width: 1000px;
+    --location-header-min-width: 415px;
+    --location-header-min-width-small: 100px; /* Already had this for small, but naming for consistency */
+    --question-margin-bottom: 100px;
+    --social-icon-size: 40px;
+}
+
 /* CSS Reset */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -5,7 +35,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
 small, strike, strong, sub, sup, tt, var,
 b, i,
-dl, dt, dd,
+dl, dt, dd, ol, ul,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details,
@@ -15,70 +45,114 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     font-size: 100%;
-    text-decoration:none;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
 }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* End CSS Reset */
 
 @keyframes slideInFromRight {
     0% {
         transform: translateX(200%);
-        opacity:0;
+        opacity: 0;
     }
     100% {
         transform: translateX(0);
-        opacity:1;
+        opacity: 1;
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1.0;
     }
 }
 
 ul {
-    list-style-type: none;
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0;
-    -webkit-margin-end: 0;
-    -webkit-padding-start: 0;
+    /* list-style-type: none; Already in reset */
+    /* -webkit-margin-before: 0; Replaced by reset */
+    /* -webkit-margin-after: 0; Replaced by reset */
+    /* -webkit-margin-start: 0; Replaced by reset */
+    /* -webkit-margin-end: 0; Replaced by reset */
+    /* -webkit-padding-start: 0; Replaced by reset */
 }
 
 a:link, a:visited, a:hover, a:active {
-    color:inherit;
+    color: inherit;
 }
 
 body {
-    font-family: 'Press Start 2P',Arial,sans serif;
-    color:White;
-    background-color:Black;
+    font-family: var(--font-family-main);
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
 }
 
 .logoContainer {
-    margin: 40px;
+    margin: var(--default-margin);
 }
 
 .logo {
-    max-width:250px;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition-duration: 30s;
-    -moz-transition-duration: 30s;
-    -o-transition-duration: 30s;
-    transition-duration: 30s;
+    max-width: var(--logo-max-width);
+    transform: rotate(0deg); /* Restoring original base transform */
+    transition-duration: var(--transition-duration-logo); /* Restoring original transition */
+    transition-property: transform; /* Restoring original transition */
+    /* cursor: pointer; -- Removing this as the spin is less interactive than a hop */
 }
 
 .logo:hover {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-    -webkit-transition-duration: 30s;
-    -moz-transition-duration: 30s;
-    -o-transition-duration: 30s;
-    transition-duration: 30s;
+    transform: rotate(360deg); /* Restoring original hover effect */
+    /* animation: logo-vintage-hop 0.25s ease-in-out 2; -- REMOVING THIS */
 }
 
 #topText {
     display: block;
-    font-size: 36px;
-    margin-bottom:  40px;
+    font-size: var(--top-text-font-size);
+    margin-bottom: var(--default-margin);
 }
 
 #star-container {
@@ -91,118 +165,134 @@ body {
 }
 
 .content {
-    text-align:center;
+    text-align: center;
 }
 
 #tableSection {
-    margin:30px;
-    min-height: 600px;
+    margin: var(--table-section-margin);
+    min-height: var(--table-section-min-height);
 }
 
 table {
-    border-spacing: 0;
     position: relative;
     margin: auto;
-    max-width:1000px;
+    max-width: var(--table-max-width);
 }
 
 th {
     text-align: left;
-    font-size: 22px;
+    font-size: var(--th-font-size);
 }
 
 th, td {
-    padding: 20px;
+    padding: var(--th-td-padding);
 }
 
 tr {
-    animation: 500ms linear 0s 1 slideInFromRight;
+    animation: var(--slide-in-duration) linear 0s 1 slideInFromRight;
 }
 
 #locationHeader {
-    min-width: 415px;
+    min-width: var(--location-header-min-width);
 }
 
 .blink:hover {
-    -webkit-animation: pulsate 0.5s;
-    -webkit-animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes pulsate {
-    0% {
-        opacity: 1.0;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1.0;
-    }
+    animation: pulsate var(--pulsate-duration) infinite;
 }
 
 #about {
     display: block;
-    margin: 40px;
+    margin: var(--default-margin);
 }
 
 
 #faq {
     display: block;
-    margin: 40px;
+    margin: var(--default-margin);
 }
 
 #faqList {
-    line-height: 140%;
+    line-height: 1.4;
 }
 
 .question {
-    margin-bottom:100px;
+    margin-bottom: var(--question-margin-bottom);
 }
 
 .q {
-    margin-bottom:20px;
+    margin-bottom: var(--default-padding);
 }
 
-#footer, #copyright {
-    margin: 40px;
+/* General footer styling */
+footer {
+    margin-top: calc(var(--default-margin) * 1.5); /* Increased top margin for all footers */
+    margin-bottom: var(--default-margin); /* Keep bottom margin */
+    margin-left: var(--default-margin);
+    margin-right: var(--default-margin);
+    text-align: center; /* Center align footer content like social icons */
+}
+
+/* Remove the old #footer, #copyright rule as it's too specific and less accurate now */
+/* #footer, #copyright {
+    margin: var(--default-margin);
+} */
+
+#copyright { /* Style the copyright div itself if needed, e.g., for its own margin if not covered by footer */
+    margin-top: var(--default-padding); /* Add some space above copyright text if social icons are also present */
+}
+
+/* Specific handling for pages with the fixed footer */
+body:has(footer#footer-fixed) main {
+    padding-bottom: 120px; /* Provide space for the fixed footer */
+    /* Height estimation: social icons (40px) + copyright margin/padding + general buffer */
 }
 
 #footer-fixed {
     position: fixed;
-    bottom:0;
-    width:100%;
+    bottom: 0;
+    left: 0; /* Ensure it spans full width */
+    right: 0; /* Ensure it spans full width */
+    width: 100%; /* Explicit width, though left/right 0 should do it */
+    background-color: var(--primary-bg-color); /* Ensure it has a background */
+    padding-top: var(--default-padding); /* Add some padding within the fixed footer */
+    padding-bottom: var(--default-padding);
+    /* margin: var(--default-margin); Remove this from footer-fixed, its positioning is handled by fixed */
 }
 
 .socialIcon > img {
-    height:40px;
-    width:40px;
+    height: var(--social-icon-size);
+    width: var(--social-icon-size);
 }
 
 @media screen and (max-width:900px) {
     body {
-        font-size: small;
+        font-size: var(--font-size-small-media);
     }
     
     #tableSection {
-        min-height: 500px;
+        min-height: var(--table-section-min-height-small);
     }
 
     #locationHeader {
-        min-width: 100px;
+        min-width: var(--location-header-min-width-small);
     }
 
     #topText {
-        font-size: large;
-        margin-bottom: 20px;
+        font-size: var(--top-text-font-size-small);
+        margin-bottom: var(--default-padding);
+    }
+
+    .logoContainer {
+        margin: var(--default-padding);
     }
 
     .logo {
-        margin: 20px;
-        max-width: 100px;
+        max-width: var(--logo-max-width-small);
     }
 
     th, td {
-        padding: 15px 5px;
-        font-size: small;
+        padding: var(--th-td-padding-small-vertical) var(--th-td-padding-small-horizontal);
+        font-size: var(--font-size-small-media);
     }
+    
 }

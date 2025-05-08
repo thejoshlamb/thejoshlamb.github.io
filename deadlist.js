@@ -1,63 +1,15 @@
-const deadlist = [    
-     {
-         name: 'Crowbar',
-         score: 8.5,
-         date: new Date('May 11 2018'),
-     },
-    {
-        name: 'Trans Am',
-        score: 9.2,
-        date: new Date('January 24 2018'),
-    },
-     {
-         name: 'Monarch Burger 1.0',
-         score: 8.4,
-         date: new Date('June 14 2017'),
-     },
-    {
-        name: 'Campagnolo Upstairs',
-        score: 8.156,
-        date: new Date('March 15 2017'),
-    },
-    {
-        name: 'Linh Cafe',
-        score: 8.216666,
-        date: new Date('July 19 2019'),
-    },
-]
-
-const multiplier = 12345;
-
-const numberWithCommas = function(x) {
-    return Math.round(x).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-};
-
-const table = document.getElementById('deadScoresTable');
-hiscores = deadlist.map(function(item) {
-    item.score = item.score*multiplier;
-    return item;
+// deadlist.js
+document.addEventListener('DOMContentLoaded', () => {
+    if (typeof deadBurgerData !== 'undefined' && typeof scoreMultiplier !== 'undefined' && typeof renderBurgerTable !== 'undefined') {
+        renderBurgerTable({
+            data: deadBurgerData,
+            tableId: 'deadScoresTable',
+            initialDisplayCount: deadBurgerData.length, // Show all by default for dead list
+            hasLinks: false, // Items in deadlist typically don't have links
+            itemMultiplier: scoreMultiplier
+            // No showAllButtonId needed for deadlist as it shows all items
+        });
+    } else {
+        console.error('Required data or functions not found for deadlist.js. Make sure data.js and tableUtils.js are loaded before deadlist.js.');
+    }
 });
-hiscores.sort(function(a, b) {
-    return b.score - a.score;
-});
-
-let count = 0;
-
-function drawScores (stop) {
-    setTimeout(function() {
-        const row = table.insertRow();
-        const rank = row.insertCell(0);
-        const name = row.insertCell(1);
-        const score = row.insertCell(2);
-        rank.innerText = count + 1;
-        const linkText = document.createTextNode(hiscores[count].name);
-        name.appendChild(linkText);
-        score.innerText = numberWithCommas(hiscores[count].score);
-        count += 1;
-        if (count < stop) {
-            drawScores(stop);
-        }
-    }, 150)
-}
-
-drawScores(hiscores.length);

@@ -1,21 +1,37 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>RIVAL BURGER CLUB</title>
   <link type="text/css" rel='stylesheet' href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0SGXE9LYTQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0SGXE9LYTQ');
+  </script>
 </head>
 <body>
 <div id="star-container"></div>
 
 <div class="content">
-  <a href="index.html">
-    <div class="logoContainer">
-      <img class="logo" src="img/rival-logo.png" alt="Rival Burger Club">
-    </div>
-  </a>
-  <div id="topText">In Memory Of</div>
-  <div id="tableSection">
+  <header>
+    <a href="index.html">
+      <div class="logoContainer">
+        <img class="logo" src="img/rival-logo.png" alt="Rival Burger Club">
+      </div>
+    </a>
+    <div id="topText">In Memory Of</div>
+  </header>
+  <main>
+    <div id="tableSection">
       <table id="deadScoresTable">
         <thead>
         <tr>
@@ -29,12 +45,15 @@
       </table>
     </div>
     <a href="javascript:void(0)" id="showAll" class="blink ease" style="display: none">--- VVV ---</a>
-  <div id="footer">
+  </main>
+  <footer>
     <a class="socialIcon blink" href="http://instagram.com/rivalburger" target="_blank"><img src="img/Insta.png" alt="IG"></a>
-    <div id="copyright">&copy; Rival Burger Club <script>document.write(new Date().getFullYear());</script></div>
-  </div>
+    <div id="copyright">&copy; Rival Burger Club <span id="copyright-year"></span></div>
+  </footer>
 </div>
-<script src="deadlist.js"></script>
-<script src="stars.js"></script>
+<script src="data.js" defer></script>
+<script src="tableUtils.js" defer></script>
+<script src="deadlist.js" defer></script>
+<script src="stars.js" defer></script>
 </body>
 </html>
