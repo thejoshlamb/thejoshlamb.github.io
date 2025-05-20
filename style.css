@@ -180,7 +180,6 @@ table {
 }
 
 th {
-    text-align: left;
     font-size: var(--th-font-size);
 }
 
