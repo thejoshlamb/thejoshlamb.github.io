@@ -176,7 +176,13 @@ const liveBurgerData = [
         score: 8.95,
         date: new Date('May 1 2025'),
         link: 'https://www.takeoutshack.ca/'
-    }
+    },
+    {
+        name: 'Aureliana',
+        score: 8.225,
+        date: new Date('April 14 2026'),
+        link: 'https://www.aureliana.ca/'
+    },
 ];
 
 const deadBurgerData = [
