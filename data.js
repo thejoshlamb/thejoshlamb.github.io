@@ -173,7 +173,7 @@ const liveBurgerData = [
     },
     {
         name: 'Take Out Shack',
-        score: 8.95,
+        score: 8.3,
         date: new Date('May 1 2025'),
         link: 'https://www.takeoutshack.ca/'
     },
